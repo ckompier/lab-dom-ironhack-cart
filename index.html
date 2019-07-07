@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="./js/index.js"></script> 
+  <!--<script type="text/javascript" src="./js/index.js"></script>  -->
   <title>Ironhack cart</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 
 <h2>IronHack Merchandising Shop</h2>
 
-<div class="classFlex" id="contenedor1">
+<div class="classFlex">
 
     <div>
       <span id="productName">IronBubbie-head</span>
@@ -42,7 +42,7 @@
 </div>
 
 
-<div class="classFlex" id="contenedor2">
+<div class="classFlex">
 
     <div>
       <span id="productName2">IronShit</span>
@@ -70,19 +70,24 @@
 </div>
 
 <div class="green">
-    <input class="btn-success" id= "calcular" type="button" value="Calculate Prices" onclick="calculatePrice()" >
+    <input class="btn-success" type="button" value="Calculate Prices" onclick="calculatePrice()">
 </div>
 
 <script>
-  function calculatePrice (){
-  let price = parseFloat(document.getElementById("productPrice").innerHTML)
-  
-  let quantity = document.getElementById("qty").value
-  
-  let addPrice = price * quantity
-  let numero ="hola"
-  document.getElementById("multiplicar").innerHTML = addPrice
-  }
+
+
+    function calculatePrice (){
+
+    let price = parseFloat(document.getElementById("productPrice").innerHTML)
+    
+    let quantity = document.getElementById("qty").value
+    
+    let addPrice = price * quantity
+    let numero ="hola"
+    document.getElementById("multiplicar").innerHTML = addPrice
+
+    }
+
 </script>
 
 
